@@ -1,0 +1,22 @@
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 12%);
+  --link-color: hsl(0, 0%, 20%);
+  --location-color: hsl(75, 94%, 57%);
+  --text-color: hsl(0, 0%, 100%)
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+}
