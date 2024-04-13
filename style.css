@@ -19,4 +19,48 @@ body {
   align-items: center;
   font-family: 'Inter', sans-serif;
   background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  background-color: var(--container-color);
+  text-align: center;
+  width: 384px;
+  border-radius: 0.7rem;
+}
+
+.userInfo {
+  padding: 2rem 1rem;
+}
+
+.userInfo img {
+  border-radius: 50%;
+  width: 88px;
+  margin-bottom: 1.5rem;
+}
+
+.userInfo .name {
+  margin-bottom: 0.8rem;
+}
+
+.userInfo .location {
+  color: var(--location-color);
+  font-weight: bold;
+}
+
+.quote {
+  margin-bottom: 2rem;
+}
+
+.socialLinks ul {
+  list-style-type: none;
+}
+
+.socialLinks ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.socialLinks {
+  margin-bottom: 2rem;
 }
