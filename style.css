@@ -30,8 +30,8 @@ body {
   border-radius: 0.6rem;
 }
 
-.userInfo {
-  padding: 2rem 1rem;
+.userInfo, .socialLinks ul {
+  margin: 2rem 0;
 }
 
 .userInfo img {
@@ -69,6 +69,13 @@ body {
   padding: 1rem;
   width: calc(384px - 80px);
   border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.socialLinks ul li:hover,
+.socialLinks ul li:hover a{
+  background-color: var(--location-color);
+  color: var(--background-color);
 }
 
 .socialLinks ul li a {
@@ -77,5 +84,15 @@ body {
   font-weight: bold;
 }
 
-
+@media screen and (max-width: 380px) {
+  .container {
+    width: 327px;
+  }
+  .socialLinks ul li {
+    width: calc(327px - 48px);
+  }
+  .socialLinks ul, .userInfo {
+    margin: 1.5rem 0;
+  }
+}
 
