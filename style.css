@@ -20,13 +20,14 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  font-size: 14px;
 }
 
 .container {
   background-color: var(--container-color);
   text-align: center;
   width: 384px;
-  border-radius: 0.7rem;
+  border-radius: 0.6rem;
 }
 
 .userInfo {
@@ -37,10 +38,12 @@ body {
   border-radius: 50%;
   width: 88px;
   margin-bottom: 1.5rem;
+  filter: opacity(0.6);
 }
 
 .userInfo .name {
   margin-bottom: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .userInfo .location {
@@ -54,13 +57,25 @@ body {
 
 .socialLinks ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.socialLinks ul li {
+  background-color: var(--link-color);
+  padding: 1rem;
+  width: calc(384px - 80px);
+  border-radius: 0.6rem;
 }
 
 .socialLinks ul li a {
   text-decoration: none;
   color: var(--text-color);
+  font-weight: bold;
 }
 
-.socialLinks {
-  margin-bottom: 2rem;
-}
+
+
